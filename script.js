@@ -115,9 +115,15 @@ function startConfetti() {
 
     animateConfetti();
 
+    // Play the confetti sound effect
+    const confettiSound = document.getElementById('confetti-sound');
+    confettiSound.play();
+
     // Stop the animation after 5 seconds
     setTimeout(() => {
         canvas.style.display = 'none'; // Hide the canvas
+        confettiSound.pause(); // Stop the confetti sound effect
+        confettiSound.currentTime = 0; // Reset sound position
     }, 5000);
 }
 
