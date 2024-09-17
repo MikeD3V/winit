@@ -114,7 +114,13 @@ function startConfetti() {
     }
 
     animateConfetti();
+
+    // Stop the animation after 5 seconds
+    setTimeout(() => {
+        canvas.style.display = 'none'; // Hide the canvas
+    }, 5000);
 }
+
 
 // Request microphone permission and start detection
 requestMicPermission();
