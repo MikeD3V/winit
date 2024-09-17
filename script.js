@@ -121,6 +121,5 @@ function startConfetti() {
     }, 5000);
 }
 
-
 // Request microphone permission and start detection
 requestMicPermission();
