@@ -37,7 +37,7 @@ function startBlowDetection(stream) {
         }
         const averageVolume = sum / bufferLength;
 
-        if (averageVolume > 40) {  // Threshold can be adjusted
+        if (averageVolume > 60) {  // Threshold can be adjusted
             blowOutCandle();
         }
 
